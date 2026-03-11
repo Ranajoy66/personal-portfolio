@@ -9,7 +9,7 @@ This portfolio highlights my work, technical skills, and provides an easy way fo
 ## 🚀 Live Demo
 
 🔗 **Portfolio Website:**
-https://ranajoy-portfolio.netlify.app/
+https://ranajoy66.github.io/personal-portfolio/
 
 ---
 
