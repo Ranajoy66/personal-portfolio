@@ -110,13 +110,13 @@ To run this project locally:
 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/Ranajoy66/personal-portfolio.git
 ```
 
 2. Navigate to the project folder
 
 ```
-cd portfolio
+cd personal-portfolio
 ```
 
 3. Open `index.html` in your browser.
