@@ -1,0 +1,182 @@
+/* =========================
+   LARGE TABLETS
+   ========================= */
+
+@media screen and (max-width: 1200px) {
+
+  section {
+    margin: 0 5rem;
+  }
+
+  #profile {
+    gap: 3rem;
+  }
+
+  .section__pic-container {
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+
+/* =========================
+   TABLETS
+   ========================= */
+
+@media screen and (max-width: 992px) {
+
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  section {
+    margin: 0 3rem;
+  }
+
+  #profile {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .section__pic-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+}
+
+
+/* =========================
+   SMALL TABLETS
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+  section {
+    margin: 0 2rem;
+  }
+
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-containers {
+    flex-direction: column;
+  }
+
+  .details-container {
+    width: 100%;
+  }
+
+  .article-container {
+    justify-content: center;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+
+/* =========================
+   MOBILE DEVICES
+   ========================= */
+
+@media screen and (max-width: 600px) {
+
+  section {
+    margin: 0 1.5rem;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .typing-text {
+    font-size: 1.4rem;
+  }
+
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .icon {
+    height: 1.5rem;
+  }
+
+  footer {
+    height: auto;
+  }
+
+}
+
+
+/* =========================
+   PROJECT GRID RESPONSIVE
+   ========================= */
+
+@media screen and (max-width: 1024px) {
+
+  #projects .about-containers {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  #projects .about-containers {
+    grid-template-columns: 1fr;
+  }
+
+  .project-img {
+    height: 180px;
+    object-fit: cover;
+  }
+
+}
+
+
+/* =========================
+   CONTACT SECTION
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-info-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}

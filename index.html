@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio</title>
+
+    <link rel="icon" href="assets/favicon.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Particles JS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <!-- PARTICLES BACKGROUND -->
+    <div id="particles-js"></div>
+
+    <nav id="desktop-nav">
+        <div class="logo">Personal Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- <button id="theme-toggle">🌙</button> -->
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Personal Portfolio</div>
+
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#internships" onclick="toggleMenu()">Internships</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+
+        <div class="section__pic-container">
+            <img src="./assets/profile_pic.jpg" alt="profile" />
+        </div>
+
+        <div class="section__text">
+
+            <p class="section__text__p1">Hello, I'm</p>
+
+            <h1 class="title">Ranajoy Dutta</h1>
+
+            <!-- TYPED TEXT -->
+            <h2 class="typing-text">
+                <span id="typed"></span>
+            </h2>
+
+            <div class="btn-container">
+
+                <button class="btn btn-color-2" onclick="window.open('./assets/ranajoyCV.pdf')">
+                    Download CV
+                </button>
+
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+
+            </div>
+
+            <div id="socials-container">
+
+                <img src="./assets/linkedin.png" alt="linkedin" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/ranajoy-dutta-035004272'" />
+
+                <img src="./assets/github.png" alt="github" class="icon"
+                    onclick="location.href='https://github.com/Ranajoy66'" />
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+
+        <div class="section-container">
+
+            <div class="section__pic-container">
+                <img src="./assets/about_pic.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+
+            <div class="about-details-container">
+
+                <div class="about-containers">
+
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+
+                        <h3>Education</h3>
+
+                        <p>BCA Bachelors Degree<br>MCA Masters Degree</p>
+                    </div>
+
+                </div>
+
+                <div class="text-container">
+
+                    <p>
+                        I am a MCA student with a strong interest in web development and
+                        software development and emerging technologies. I enjoy learning new
+                        tools, solving problems, and building efficient solutions through code.
+                        I am actively seeking opportunities to apply my technical skills,
+                        gain industry experience, and grow as a developer.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" /> -->
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+
+        <div class="experience-details-container">
+
+            <div class="about-containers">
+
+                <div class="details-container">
+
+                    <h2 class="experience-sub-title">Full Stack Development</h2>
+
+                    <div class="article-container">
+
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" />
+                            <div>
+                                <h3>Javascript</h3>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" />
+                            <div>
+                                <h3>React JS</h3>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" />
+                            <div>
+                                <h3>Material UI</h3>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" />
+                            <div>
+                                <h3>MERN</h3>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+
+                <div class="details-container">
+
+                    <h2 class="experience-sub-title">Software Development</h2>
+
+                    <div class="article-container">
+
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" />
+                            <div>
+                                <h3>Programming</h3>
+                                <p>C JAVA PYTHON</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" />
+                            <div>
+                                <h3>Database</h3>
+                                <p>MySQL MongoDB</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" />
+                            <div>
+                                <h3>Tools</h3>
+                                <p>Git Github</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" />
+                            <div>
+                                <h3>Software Development</h3>
+                                <p>SDLC</p>
+                                <p>STLC</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" /> -->
+
+    </section>
+
+
+    <!-- PROJECTS  -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+
+            <!-- Grid 1 -->
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/KFC_new_logo.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">KFC Clone</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Ranajoy66/KFC-Clone-using-HTML-CSS'">
+                            View Code
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://ranajoy66.github.io/KFC-Clone-using-HTML-CSS/'">
+                            Live Project
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/ps-store.jpg" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">PS Store Clone</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Ranajoy66/play-Station-Store'">
+                            View Code
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://ranajoy66.github.io/play-Station-Store/'">
+                            Live Project
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/spotify.jpg" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Spotify Clone</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Ranajoy66/spotify-Clone'">
+                            View Code
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://ranajoy66.github.io/spotify-Clone/'">
+                            Live Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid 2 -->
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/tic-tac-toe.avif" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Tic Tac Toe</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Ranajoy66/Tic-Tac-Toe-Game/tree/main'">
+                            View Code
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://ranajoy66.github.io/Tic-Tac-Toe-Game/'">
+                            Live Project
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/currency-conv.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Currency Converter</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Ranajoy66/rdjs-currencyConverter/tree/main'">
+                            View Code
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://ranajoy66.github.io/rdjs-currencyConverter/'">
+                            Live Project
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/netflix_logo.jpg" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Netflix Clone</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Ranajoy66/netflix-clone'">
+                            View Code
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://ranajoy66.github.io/netflix-clone/'">
+                            Live Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid 3 -->
+            <!-- git log --oneline --graph --all --decorate -10
+ -->
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/notes_logo.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Thinkboard Notes</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Ranajoy66/thinkboard-notes'">
+                            View Code
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
+                            Live Project
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/KIITM logo.jpeg" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">University Admission Portal</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/pranabesh10/Clg_Minor_Project'">
+                            View Code
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
+                            Live Project
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/js_logo.jpg" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Elite Programming</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Ranajoy66/All-Programming'">
+                            View Code
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://ranajoy66.github.io/All-Programming/'">
+                            Live Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" /> -->
+    </section>
+
+    <!-- INTERNSHIPS -->
+
+    <section id="internships">
+
+        <p class="section__text__p1">My Professional</p>
+        <h1 class="title">Internships</h1>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    2024
+                </div>
+
+                <div class="timeline-content">
+                    <h3>Web Development Intern</h3>
+                    <p>Worked on MERN stack project, CertiCheck. It is a website which offers various courses along with
+                        the verified certificate. Built responsive website components and improved
+                        website performance.</p>
+                    <span>Duration: 1 Month</span>
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    2025
+                </div>
+
+                <div class="timeline-content">
+                    <h3>Power BI Workshop</h3>
+                    <p>Attented a Power BI session organized by Office Master. Worked on different power bi
+                        dashboards and created a one as well which keeps record for a shops annual sales report.</p>
+                    <span>Duration: 3 hours</span>
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    2026
+                </div>
+
+                <div class="timeline-content">
+                    <h3>Java Programming Intern</h3>
+                    <p>Worked with basic Java code, and also collection framework to built a Chat Bot App.</p>
+                    <span>Duration: 1 Month</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+
+        <div class="contact-info-upper-container">
+
+            <div class="contact-info-container">
+
+                <img src="./assets/email.png" class="icon contact-icon email-icon" />
+
+                <p>
+                    <a href="mailto:indranil.ranajoy66@gmail.com">
+                        indranil.ranajoy66@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="contact-info-container">
+
+                <img src="./assets/linkedin.png" class="icon contact-icon" />
+
+                <p>
+                    <a href="https://www.linkedin.com/in/ranajoy-dutta-035004272">
+                        LinkedIn
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <nav>
+            <div class="nav-links-container">
+
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <p>Copyright &#169; 2026 Ranajoy Dutta. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
