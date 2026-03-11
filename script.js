@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var typed = new Typed("#typed", {
         strings: [
             "Fresher",
-            "Web Devloper"
+            "Web Developer"
         ],
         typeSpeed: 80,
         backSpeed: 50,
