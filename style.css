@@ -18,6 +18,11 @@ body {
     color: white;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 /* SCROLL PROGRESS BAR  */
 
 #scroll-progress {
@@ -197,6 +202,18 @@ nav {
     display: none;
 }
 
+@media screen and (max-width:1200px){
+
+  #desktop-nav{
+    display:none;
+  }
+
+  #hamburger-nav{
+    display:flex;
+  }
+
+}
+
 .hamburger-menu {
     position: relative;
     display: inline-block;
@@ -263,7 +280,7 @@ nav {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    min-height: 100vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
