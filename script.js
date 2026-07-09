@@ -33,41 +33,62 @@ document.addEventListener("DOMContentLoaded", function () {
         particlesJS("particles-js", {
             particles: {
                 number: {
-                    value: 80,
+                    value: 115,
                     density: {
                         enable: true,
-                        value_area: 800
+                        value_area: 950
                     }
                 },
 
                 color: {
-                    value: "#ffffff"
+                    value: ["#1f5d50", "#c4663b", "#d7a84d"]
                 },
 
                 shape: {
-                    type: "circle"
+                    type: ["circle", "triangle", "polygon"],
+                    polygon: {
+                        nb_sides: 5
+                    }
                 },
 
                 opacity: {
-                    value: 0.5
+                    value: 0.35,
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 0.8,
+                        opacity_min: 0.08,
+                        sync: false
+                    }
                 },
 
                 size: {
-                    value: 3,
-                    random: true
+                    value: 4,
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 2,
+                        size_min: 0.6,
+                        sync: false
+                    }
                 },
 
                 line_linked: {
                     enable: true,
-                    distance: 150,
-                    color: "#888",
-                    opacity: 0.4,
+                    distance: 170,
+                    color: "#1f5d50",
+                    opacity: 0.2,
                     width: 1
                 },
 
                 move: {
                     enable: true,
-                    speed: 2
+                    speed: 1.25,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
                 }
             },
 
@@ -88,9 +109,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 modes: {
                     grab: {
-                        distance: 140,
+                        distance: 170,
                         line_linked: {
-                            opacity: 1
+                            opacity: 0.45
                         }
                     },
 
@@ -175,23 +196,3 @@ window.addEventListener("scroll", () => {
     document.getElementById("scroll-progress").style.width = progress + "%";
 
 });
-
-/* DARK / LIGHT THEME */
-
-// const themeBtn = document.getElementById("theme-toggle");
-
-// themeBtn.addEventListener("click",()=>{
-
-//     document.body.classList.toggle("light-theme");
-
-//     if(document.body.classList.contains("light-theme")){
-
-//         themeBtn.textContent="☀️";
-
-//     }else{
-
-//         themeBtn.textContent="🌙";
-
-//     }
-
-// });
